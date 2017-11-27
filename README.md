@@ -392,6 +392,7 @@ Connection Instance Methods
     * **tls** - _boolean_ - Perform implicit TLS connection? **Default:** false
     * **tlsOptions** - _object_ - Options object to pass to tls.connect() **Default:** (none)
     * **autotls** - _string_ - Set to 'always' to always attempt connection upgrades via STARTTLS, 'required' only if upgrading is required, or 'never' to never attempt upgrading. **Default:** 'never'
+    * **clientId** - _string_ - Simulate a client ID ,support special mail server eg : 163,126
     * **connTimeout** - _integer_ - Number of milliseconds to wait for a connection to be established. **Default:** 10000
     * **authTimeout** - _integer_ - Number of milliseconds to wait to be authenticated after a connection has been established. **Default:** 5000
     * **socketTimeout** - _integer_ - The timeout set for the socket created when communicating with the IMAP server. If not set, the socket will not have a timeout. **Default:** 0
@@ -755,3 +756,5 @@ Several things not yet implemented in no particular order:
   * NOTIFY (via NOTIFY extension -- RFC5465)
   * STATUS addition to LIST (via LIST-STATUS extension -- RFC5819)
   * QRESYNC (RFC5162)
+
+
